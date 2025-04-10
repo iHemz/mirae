@@ -1,0 +1,14 @@
+{
+  "name": "mirae",
+  "packageManager": "yarn@4.8.1",
+  "scripts": {
+    "dev": "lite-server -c bs-config.json",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "lite-server": "^2.6.1",
+    "typescript": "^5.8.3"
+  }
+}
