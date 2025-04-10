@@ -1,0 +1,32 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+
+:root {
+  /* COLORS */
+  /* white */
+  --default: #ffffff;
+  --white-1: #f5f5f5;
+  --white-2: #eceff1;
+
+  /* primary */
+  --primary-6: #00427a;
+
+  /* orange */
+  --orange-6: #f58220;
+
+  /* grey */
+  --grey-1: #979797;
+  --grey-6: #2c2c2c;
+  --grey-7: #7d7d7d;
+
+  /* dark */
+  --dark: #242424;
+
+  /* Fonts */
+  --spoka-neo: "Spoqa Han Sans Neo";
+  --spoka-jp: "Spoka Han Sans JP";
+
+  /* Screen */
+  --maxW: 1920px;
+  --minH: 100vh;
+}
