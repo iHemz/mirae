@@ -1,4 +1,4 @@
-"use strict";
+import { Carousel } from "./carousel.js";
 class App {
     constructor() {
         this.init();
@@ -14,6 +14,8 @@ class App {
                 await this.loadHeader();
                 // Load footer
                 await this.loadFooter();
+                // run slider
+                this.startSlider();
                 // handle scroll to top action
                 this.scrollTopAction();
             }
@@ -47,6 +49,12 @@ class App {
                     });
                 }
             });
+        }
+    }
+    startSlider() {
+        const carouselElement = document.querySelector(".carousel");
+        if (carouselElement) {
+            new Carousel(carouselElement);
         }
     }
 }

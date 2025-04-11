@@ -45,6 +45,7 @@
   /* OPACITY */
   /* white */
   --opacity-white-2: rgba(255, 255, 255, 0.2);
+  --opacity-white-4: rgba(255, 255, 255, 0.4);
   --opacity-white-6: rgba(255, 255, 255, 0.6);
 
   /* primary */

@@ -1,6 +1,7 @@
 .carousel {
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .carousel_logo {
@@ -23,15 +24,25 @@
 
 .carousel_card {
   height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: absolute;
   top: 0;
+  left: 0;
   padding: 80px 16px 48px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.carousel_card.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .carousel_card > div {
@@ -67,6 +78,30 @@
 
 .carousel_card button:hover {
   background: var(--opacity-white-2);
+}
+
+.carousel_navigation {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.carousel_dash {
+  width: 20px;
+  height: 3px;
+  background: var(--opacity-white-4);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel_dash.active {
+  background: var(--default);
 }
 
 .carousel_card__1 {

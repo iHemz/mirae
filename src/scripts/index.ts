@@ -1,3 +1,5 @@
+import { Carousel } from "./carousel.js";
+
 class App {
   constructor() {
     this.init();
@@ -16,6 +18,9 @@ class App {
 
         // Load footer
         await this.loadFooter();
+
+        // run slider
+        this.startSlider();
 
         // handle scroll to top action
         this.scrollTopAction();
@@ -55,6 +60,15 @@ class App {
           });
         }
       });
+    }
+  }
+
+  private startSlider() {
+    const carouselElement = document.querySelector(
+      ".carousel"
+    ) as HTMLElement | null;
+    if (carouselElement) {
+      new Carousel(carouselElement);
     }
   }
 }
