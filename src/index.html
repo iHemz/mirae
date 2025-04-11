@@ -11,6 +11,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+      integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
@@ -18,17 +25,24 @@
       <!-- headliner -->
       <section class="headliner">
         <div class="headliner_content">
-          <p class="headliner_content__title">
+          <h1>
             <span>The</span>
             <span aria-label="First">
-              <img src="./assets/logo_one.svg" alt="1" aria-hidden="true" />
-              <span>ST</span>
+              <img
+                class="logo_one"
+                src="./assets/logo_one.svg"
+                alt="1"
+                aria-hidden="true"
+              />
+              <span class="superscripted">ST</span>
             </span>
             <span>Building</span>
-          </p>
+          </h1>
           <div>
-            <p>최고의 공간을 경험하세요</p>
-            <p>국내를 넘어 세계의 무대를 준비하는 여러분들과 함께 합니다.</p>
+            <p class="bold_sm">최고의 공간을 경험하세요</p>
+            <p class="regular_sm">
+              국내를 넘어 세계의 무대를 준비하는 여러분들과 함께 합니다.
+            </p>
           </div>
         </div>
       </section>
@@ -36,28 +50,28 @@
       <!-- Convenience section to display convenience cards -->
       <section class="convenience add_padding add_dark_background">
         <div class="convenience_header">
-          <h6>convenience</h6>
-          <p>
-            <span>미래에셋센터원에서 경험하는</span>
-            <span>특별한 서비스</span>
-          </p>
+          <h6>Convenience</h6>
+          <div>
+            <p class="regular_lg">미래에셋센터원에서 경험하는</p>
+            <h5 class="conv_subtitle">특별한 서비스</h5>
+          </div>
         </div>
         <div class="convenience_cards">
           <article>
-            <img src="./assets/kf_gallery.svg" alt="" />
+            <img src="./assets/kf_gallery.svg" alt="" loading="lazy" />
             <div>
-              <h3>KF GALLERY</h3>
-              <p>
+              <h5>KF GALLERY</h5>
+              <p class="regular_md">
                 국내외 방문객에게 전시회, 문화 행사, 교육 프로그램 등 개최 국제
                 교류를 촉진하는 다양한 전시와 행사에 참여해보세요.
               </p>
             </div>
           </article>
           <article>
-            <img src="./assets/wellness.svg" alt="" />
+            <img src="./assets/wellness.svg" alt="" loading="lazy" />
             <div>
-              <h3>센터원 Wellness</h3>
-              <p>
+              <h5>센터원 Wellness</h5>
+              <p class="regular_md">
                 피트니스, 골프GDR+, 필라테스, GX,스피닝, 사우나,
                 PT(퍼스널트레이닝) 등 운영 바쁜 일상과 업무에서 잠시 휴식을
                 취해보세요.
@@ -65,10 +79,10 @@
             </div>
           </article>
           <article>
-            <img src="./assets/sparkplus.svg" alt="" />
+            <img src="./assets/sparkplus.svg" alt="" loading="lazy" />
             <div>
-              <h3>SPARKPLUS</h3>
-              <p>
+              <h5>SPARKPLUS</h5>
+              <p class="regular_md">
                 원하는 인원만큼 사용할 수 있는 맞춤형 오피스 일에만 집중할 수
                 있는 완벽한 공유 오피스를 만나보세요.
               </p>
@@ -80,15 +94,20 @@
       <!-- carousel -->
       <section class="carousel">
         <article class="carousel_card carousel_card__1">
-          <h6>
+          <h5>
             <span>The</span>
-            <span aria-label="First">
-              <img src="./assets/logo_one.svg" alt="1" aria-hidden="true" />
-              <span>ST</span>
+            <span aria-label="First" class="carousel_logo_wrapper">
+              <img
+                class="carousel_logo"
+                src="./assets/logo_one.svg"
+                alt="1"
+                aria-hidden="true"
+              />
+              <span class="superscripted carousel_logo_superscripted">ST</span>
             </span>
             <span>Environment you would imagine</span>
-          </h6>
-          <div>
+          </h5>
+          <div class="regular_sm">
             <p>
               서울 청계천은 자연 그대로의 휴식과 재충전 공간이며, 점심시간과
               퇴근길에 만나는 청계천의 여유로움은 CENTER1 입주자 및 이용객이
@@ -103,15 +122,20 @@
           </div>
         </article>
         <article class="carousel_card carousel_card__2">
-          <h6>
+          <h5>
             <span>The</span>
-            <span aria-label="First">
-              <img src="./assets/logo_one.svg" alt="1" aria-hidden="true" />
-              <span>ST</span>
+            <span aria-label="First" class="carousel_logo_wrapper">
+              <img
+                class="carousel_logo"
+                src="./assets/logo_one.svg"
+                alt="1"
+                aria-hidden="true"
+              />
+              <span class="superscripted carousel_logo_superscripted">ST</span>
             </span>
             <span>Building you would prefer</span>
-          </h6>
-          <div>
+          </h5>
+          <div class="regular_sm">
             <p>
               Center1은 약 170,000m²의 건축 연면적으로 서울 도심 최대 규모의
               빌딩입니다. 안정적 구조, 효율적 공간설계, 친환경 건축, 반영구적
@@ -126,15 +150,20 @@
           </div>
         </article>
         <article class="carousel_card carousel_card__3">
-          <h6>
+          <h5>
             <span>The</span>
-            <span aria-label="First">
-              <img src="./assets/logo_one.svg" alt="1" aria-hidden="true" />
-              <span>ST</span>
+            <span aria-label="First" class="carousel_logo_wrapper">
+              <img
+                class="carousel_logo"
+                src="./assets/logo_one.svg"
+                alt="1"
+                aria-hidden="true"
+              />
+              <span class="superscripted carousel_logo_superscripted">ST</span>
             </span>
             <span>Impression you would have</span>
-          </h6>
-          <div>
+          </h5>
+          <div class="regular_sm">
             <p>
               Center1의 건축 모티브는 음과 양 (Yin & Yang)입니다. 하나의
               매스에서 분리된 두 동은 음각과 양각 형태로 마주 보고 있습니다.
@@ -149,15 +178,20 @@
           </div>
         </article>
         <article class="carousel_card carousel_card__4">
-          <h6>
+          <h5>
             <span>The</span>
-            <span aria-label="First">
-              <img src="./assets/logo_one.svg" alt="1" aria-hidden="true" />
-              <span>ST</span>
+            <span aria-label="First" class="carousel_logo_wrapper">
+              <img
+                class="carousel_logo"
+                src="./assets/logo_one.svg"
+                alt="1"
+                aria-hidden="true"
+              />
+              <span class="superscripted carousel_logo_superscripted">ST</span>
             </span>
             <span>Service you would experience</span>
-          </h6>
-          <div>
+          </h5>
+          <div class="regular_sm">
             <p>
               Center1은 입주사들을 위한 철저한 보안 관리와 사고 예방을 위한 통합
               시스템을 도입하여, 보안과 경비 현황을 한 곳에서 효과적으로
@@ -180,16 +214,16 @@
         <div class="centers_header">
           <h6>
             <span>ONLY</span>
-            <img src="./assets/center_logo.svg" alt="" />
+            <img src="./assets/center_logo.svg" alt="" loading="lazy" />
           </h6>
-          <p>
-            <span>미래에셋센터원에서만 누리는</span>
-            <span>특별한 혜택</span>
-          </p>
+          <div class="regular_lg">
+            <p>미래에셋센터원에서만 누리는</p>
+            <p>특별한 혜택</p>
+          </div>
         </div>
         <div class="centers_cards">
           <article>
-            <img src="./assets/babyMother.svg" alt="" />
+            <img src="./assets/babyMother.svg" alt="" loading="lazy" />
             <div>
               <h3>프라임 서비스</h3>
               <p>
@@ -199,7 +233,7 @@
             </div>
           </article>
           <article>
-            <img src="./assets/hallway.svg" alt="" />
+            <img src="./assets/hallway.svg" alt="" loading="lazy" />
             <div>
               <h3>E-pit 전기차 충전소</h3>
               <p>
@@ -209,7 +243,7 @@
             </div>
           </article>
           <article>
-            <img src="./assets/park.svg" alt="" />
+            <img src="./assets/park.svg" alt="" loading="lazy" />
             <div>
               <h3>주차요금 할인</h3>
               <p>
@@ -224,120 +258,150 @@
       <!-- events section -->
       <section class="events add_padding">
         <section class="events_top">
-          <div class="events_top__header">
-            <h6>지금 살펴봐야할 이벤트</h6>
+          <div class="events__header">
+            <h5>지금 살펴봐야할 이벤트</h5>
             <button>
               <i class="fa fa-plus" aria-hidden="true"></i>
             </button>
           </div>
           <div class="events_top__carousel">
             <button class="events_chevron events_chevron__left">
-              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
             </button>
-            <section class="events_top__carousel_container">
-              <article
-                class="events_top__carousel_image events_top__carousel_image_1"
-              >
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/ab6c/3cc5/1e31cba7aea08f5996456a334542d0ec?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ras8VUoRLWDXqdEFDfaWsGGxeNwIT5Dl4wbN3tZ8ycIdmA83O2RmuYO958m3YGwIdqIS3ncp4Ecl3Ir7O43UD6QxM0u75kW6UU1SVyi8TYG39658BA-CsUlNDaofNxNXFXZrs0Z0nhmndLPuyH92XwFfcytDOmhVQq8Mv0dQdW0pWhuZYR0UfghMp8EWcvtNkbnzrdIiCSVgiaPS65Qe6yXFcI33h856kjTEtIw6toa0cs5U-2n2~F-PXl4pkWvcHgaz65LmV3UNuMMU0fKLwiKsL9IakDFVpxYBbea4SSQldx37fLKsZx0c8f~JsEN8PL9aTyssTjc4FXHXKrJXpw__"
-                  alt=""
-                />
+
+            <article
+              class="events_top__carousel_image events_top__carousel_image_1"
+            >
+              <img
+                src="https://s3-alpha-sig.figma.com/img/ab6c/3cc5/1e31cba7aea08f5996456a334542d0ec?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ras8VUoRLWDXqdEFDfaWsGGxeNwIT5Dl4wbN3tZ8ycIdmA83O2RmuYO958m3YGwIdqIS3ncp4Ecl3Ir7O43UD6QxM0u75kW6UU1SVyi8TYG39658BA-CsUlNDaofNxNXFXZrs0Z0nhmndLPuyH92XwFfcytDOmhVQq8Mv0dQdW0pWhuZYR0UfghMp8EWcvtNkbnzrdIiCSVgiaPS65Qe6yXFcI33h856kjTEtIw6toa0cs5U-2n2~F-PXl4pkWvcHgaz65LmV3UNuMMU0fKLwiKsL9IakDFVpxYBbea4SSQldx37fLKsZx0c8f~JsEN8PL9aTyssTjc4FXHXKrJXpw__"
+                alt=""
+              />
+              <div class="events__content">
                 <div>
-                  <p>미래에셋센터원 크리스마스 작은 음악회</p>
-                  <ul>
-                    <li>공연 주제 : 재즈 공연</li>
+                  <p class="bold_lg events_title">
+                    미래에셋센터원 크리스마스 작은 음악회
+                  </p>
+                  <ul class="regular_sm">
+                    <li><span>공연 주제 : 재즈 공연</span></li>
                     <li>
-                      장소 : 1층 계단 앞(연주), 1층 크리스마스 트리 앞(다과 및
-                      커피 배포)
+                      <span
+                        >장소 : 1층 계단 앞(연주), 1층 크리스마스 트리 앞(다과
+                        및 커피 배포)</span
+                      >
                     </li>
                   </ul>
                 </div>
-                <p>2024.12.20(금)~2024.12.20(금)</p>
-              </article>
-              <article
-                class="events_top__carousel_image events_top__carousel_image_1"
-              >
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/b400/8780/adf061ebc826dc4fa40109580722ba65?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=eH3c1kGWkZFFMsfsjLYgmCePkiVI8FRG126NnR5ZZ0WlOgtA3ZjEvxl50kbdYOzbK9WhO-XrQdh0FEK~BOpkA50XtPLxTdy1LvnaEez4H7oxDRRaBwrkKS0xXKrjU1bbenP0cL50okdGKF0Iaz2bX~~S3nqSo2SSip-x~Te9MuLLNe6GVrPGNWBh431UQ3VOWCD4leX8XJZIO~8OFyZHbez~2Atc7pt-SzBPNpoEEBtlecbiahobnjny8Km9tbjWSqb2~UsqYm-z3fVd40lcG7JnOprG7WTvFcOR4itsvqKd9hzZB~sY4az1AN9k1kEmJdc4olEYCRWqquChg9ZFWQ__"
-                  alt=""
-                />
+                <p class="regular_sm">2024.12.20(금)</p>
+              </div>
+            </article>
+            <article
+              class="events_top__carousel_image events_top__carousel_image_1"
+            >
+              <img
+                src="https://s3-alpha-sig.figma.com/img/b400/8780/adf061ebc826dc4fa40109580722ba65?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=eH3c1kGWkZFFMsfsjLYgmCePkiVI8FRG126NnR5ZZ0WlOgtA3ZjEvxl50kbdYOzbK9WhO-XrQdh0FEK~BOpkA50XtPLxTdy1LvnaEez4H7oxDRRaBwrkKS0xXKrjU1bbenP0cL50okdGKF0Iaz2bX~~S3nqSo2SSip-x~Te9MuLLNe6GVrPGNWBh431UQ3VOWCD4leX8XJZIO~8OFyZHbez~2Atc7pt-SzBPNpoEEBtlecbiahobnjny8Km9tbjWSqb2~UsqYm-z3fVd40lcG7JnOprG7WTvFcOR4itsvqKd9hzZB~sY4az1AN9k1kEmJdc4olEYCRWqquChg9ZFWQ__"
+                alt=""
+                loading="lazy"
+              />
+              <div class="events__content">
                 <div>
-                  <p>가정의 달 EVENT</p>
-                  <ul>
-                    <li>판매상품: 와인 및 꽃박스</li>
+                  <p class="bold_lg events_title">가정의 달 EVENT</p>
+                  <ul class="regular_sm">
+                    <li><span>판매상품: 와인 및 꽃박스</span></li>
                     <li>
-                      토브의 카네이션은 행사 기간 동안 50개 판매 (한정판매)
+                      <span
+                        >토브의 카네이션은 행사 기간 동안 50개 판매
+                        (한정판매)</span
+                      >
                     </li>
                   </ul>
                 </div>
-                <p>2024.12.20(금)~2024.12.20(금)</p>
-              </article>
-            </section>
+                <p class="regular_sm">2024.05.07(화)~2024.05.08(목)</p>
+              </div>
+            </article>
+
             <button class="events_chevron events_chevron__right">
-              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
             </button>
           </div>
         </section>
-        <article>
-          <h6>센터원 소식</h6>
-          <div>
-            <p>미래에셋센터원 홈페이지 리뉴얼 안내</p>
-            <p>
-              미래에셋센터원 공식 홈페이지가 리뉴얼 오픈했습니다. 더 나은 서비스
-              제공을 위해 불편한...
-            </p>
+        <section class="events_bottom">
+          <div class="events__header">
+            <h5>센터원 소식</h5>
+            <button>
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
           </div>
-          <p>2024.09.04(수)</p>
-        </article>
+
+          <div class="events__content">
+            <div>
+              <p class="bold_lg events_title">
+                미래에셋센터원 홈페이지 리뉴얼 안내
+              </p>
+              <p class="regular_sm">
+                미래에셋센터원 공식 홈페이지가 리뉴얼 오픈했습니다. 더 나은
+                서비스 제공을 위해 불편한...
+              </p>
+            </div>
+            <p class="regular_sm">2024.09.04(수)</p>
+          </div>
+        </section>
       </section>
 
       <!-- avenue list -->
-      <section class="add_dark_background avenue-list">
-        <div class="avenue_header">
-          <img src="./assets/left_ellipse.svg" alt="" />
+      <section class="add_dark_background avenue_list">
+        <section class="avenue_header">
+          <img
+            class="avenue_title__decorator decorator_1"
+            src="./assets/left_ellipse.svg"
+            alt=""
+          />
           <div>
             <img src="./assets/center_logo.svg" alt="" />
-            <p>
-              <span>미래에셋센터원</span>
-              <span>AVENUE</span>
-            </p>
+            <div>
+              <p class="regular_lg">미래에셋센터원</p>
+              <h5>AVENUE</h5>
+            </div>
           </div>
-          <img src="./assets/right_ellipse.svg" alt="" />
-        </div>
-        <div class="avenue_carousel">
+          <img
+            class="avenue_title__decorator decorator_2"
+            src="./assets/right_ellipse.svg"
+            alt=""
+          />
+        </section>
+        <section class="avenue_carousel">
           <div class="avenue_carousel__image avenue_carousel__image_1">
-            <img src="./assets/avenue_1.svg" alt="" />
-            <h4>아티제</h4>
+            <img src="./assets/avenue_1.svg" alt="" loading="lazy" />
+            <p class="bold_lg">아티제</p>
           </div>
           <div class="avenue_carousel__image avenue_carousel__image_2">
-            <img src="./assets/avenue_2.svg" alt="" />
-            <h4>리나스</h4>
+            <img src="./assets/avenue_2.svg" alt="" loading="lazy" />
+            <p class="bold_lg">리나스</p>
           </div>
           <div class="avenue_carousel__image avenue_carousel__image_3">
-            <img src="./assets/avenue_3.svg" alt="" />
-            <h4>봉우리 한정식</h4>
+            <img src="./assets/avenue_3.svg" alt="" loading="lazy" />
+            <p class="bold_lg">봉우리 한정식</p>
           </div>
           <div class="avenue_carousel__image avenue_carousel__image_4">
-            <img src="./assets/avenue_4.svg" alt="" />
-            <h4>솔솥</h4>
+            <img src="./assets/avenue_4.svg" alt="" loading="lazy" />
+            <p class="bold_lg">솔솥</p>
           </div>
           <div class="avenue_carousel__image avenue_carousel__image_5">
-            <img src="./assets/avenue_5.svg" alt="" />
-            <h4>뚝심한우</h4>
+            <img src="./assets/avenue_5.svg" alt="" loading="lazy" />
+            <p class="bold_lg">뚝심한우</p>
           </div>
           <div class="avenue_carousel__image avenue_carousel__image_6">
-            <img src="./assets/avenue_6.svg" alt="" />
-            <h4>차이797</h4>
+            <img src="./assets/avenue_6.svg" alt="" loading="lazy" />
+            <p class="bold_lg">차이797</p>
           </div>
           <div class="avenue_carousel__image avenue_carousel__image_7">
-            <img src="./assets/avenue_7.svg" alt="" />
-            <h4>이춘복 참치</h4>
+            <img src="./assets/avenue_7.svg" alt="" loading="lazy" />
+            <p class="bold_lg">이춘복 참치</p>
           </div>
           <div class="avenue_carousel__image avenue_carousel__image_8">
-            <img src="./assets/avenue_8.svg" alt="" />
-            <h4>매드 포 갈릭</h4>
+            <img src="./assets/avenue_8.svg" alt="" loading="lazy" />
+            <p class="bold_lg">매드 포 갈릭</p>
           </div>
-        </div>
+        </section>
       </section>
 
       <!-- Mirae company shot -->
@@ -345,8 +409,27 @@
         <img
           src="https://s3-alpha-sig.figma.com/img/3855/2a0e/fca43b9a59683154bad015c546fc3031?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JaHqh0PFlgHfrih91--bO2~MnkUyEyQXvGGklaMr4qEV4H~V5FBjtfKbi~nn30ScOkZbmluCI7~VMinY9FlcEjFQBMLdNi~94KKQg9zunQ4JI0QrjWNZXfjz8ydxEC90BeTmXuQEKudvYHaVDrPw7~yrUvg0MD4ov7-JqHlZ3KFADWJpuZsArq3O8pIpZhHJVyuyuGFSE7-sdQtyHyIOIpsn6Qjt6tIcZELay7FvPwmLo-qCgmg1k0ptkhIou0cwoTio8lWrMEUN-k60Xa~mwLT4sn9-sgRqlcHZSFQ8sTdvQtgxL5IgWH4CYkUIlSkCE-W3-91CncDlG~X3oD2Q0Q__"
           alt=""
+          loading="lazy"
         />
       </section>
+      <aside class="quick-menu">
+        <button class="quick-menu_button">
+          <i class="fa-solid fa-headset"></i>
+          <span>주요문의처</span>
+        </button>
+        <button class="quick-menu_button">
+          <i class="fa-solid fa-book"></i>
+          <span>임대문의</span>
+        </button>
+        <button class="quick-menu_button">
+          <i class="fa-regular fa-calendar"></i>
+          <span>방문예약</span>
+        </button>
+        <button class="quick-menu_button">
+          <i class="fa-solid fa-circle-arrow-up"></i>
+          <span>TOP</span>
+        </button>
+      </aside>
     </main>
     <script type="module" src="scripts/index.js"></script>
   </body>

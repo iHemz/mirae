@@ -1,0 +1,62 @@
+.avenue_list {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.avenue_header {
+  text-align: center;
+  position: relative;
+}
+
+.avenue_header div div {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.avenue_header div h5 {
+  color: var(--orange-6);
+}
+
+.avenue_header img {
+  width: auto;
+}
+
+.avenue_header .avenue_title__decorator {
+  position: absolute;
+  bottom: 0;
+  width: 62px;
+}
+
+.decorator_1 {
+  left: 0;
+}
+.decorator_2 {
+  right: 0;
+}
+
+.avenue_carousel {
+  position: relative;
+  height: 334px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.avenue_carousel__image {
+  position: absolute;
+  top: 0;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.avenue_carousel__image img {
+  width: 100%;
+  height: 298;
+  object-fit: contain;
+}

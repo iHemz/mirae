@@ -3,7 +3,8 @@
   "packageManager": "yarn@4.8.1",
   "scripts": {
     "dev": "lite-server -c bs-config.json",
-    "build": "tsc",
+    "build": "tsc && cp -r src/index.html src/libs src/assets dist/",
+    "vercel-build": "yarn build",
     "watch": "tsc -w"
   },
   "devDependencies": {

@@ -15,7 +15,10 @@
   --orange-6: #f58220;
 
   /* grey */
+  --grey-0: #bebebe;
   --grey-1: #979797;
+  --grey-2: #bbbbbb;
+  --grey-5: #575757;
   --grey-6: #2c2c2c;
   --grey-7: #7d7d7d;
 
@@ -29,4 +32,24 @@
   /* Screen */
   --maxW: 1920px;
   --minH: 100vh;
+
+  /* Borders */
+  --thin-grey-border: 1px solid var(--grey-0);
+  --thin-white-border: 1px solid var(--default);
+  --thin-primary-border: 1px solid var(--primary-6);
+
+  /* border radius */
+  --borderRadius-4: 4px;
+  --borderRadius-full: 50%;
+
+  /* OPACITY */
+  /* white */
+  --opacity-white-2: rgba(255, 255, 255, 0.2);
+  --opacity-white-6: rgba(255, 255, 255, 0.6);
+
+  /* primary */
+  --opacity-primary-2: rgba(0, 66, 122, 0.2);
+
+  /* Transitions */
+  --transition-300: all 300ms;
 }

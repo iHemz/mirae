@@ -1,0 +1,47 @@
+.convenience {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.conv_subtitle {
+  color: var(--orange-6);
+}
+
+.convenience_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.convenience_cards article {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-bottom: 2px solid var(--grey-5);
+  position: relative;
+  padding-bottom: 28px;
+}
+
+.convenience_cards article p {
+  color: var(--grey-7);
+}
+
+.convenience article:first-child::before {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background: var(--orange-6);
+  position: absolute;
+  bottom: -2.5px;
+  z-index: 5;
+  left: 0;
+}
+
+.convenience article:first-child h5 {
+  color: var(--orange-6);
+}
+
+.convenience_cards img {
+  height: 203px;
+}

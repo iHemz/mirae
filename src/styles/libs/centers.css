@@ -1,0 +1,46 @@
+.centers {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.centers_header h6 {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.centers_header img {
+  width: 108px;
+  height: 20px;
+}
+
+.centers_header div p:last-child {
+  color: var(--orange-6);
+}
+
+.centers_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.centers_cards article {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.centers_cards article > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.centers_cards article p {
+  color: var(--grey-2);
+}
+
+.centers_cards img {
+  height: 203px;
+}

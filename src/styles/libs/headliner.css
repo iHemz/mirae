@@ -1,0 +1,34 @@
+.headliner {
+  height: 100vh;
+  background-image: url("../../assets/Background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 70%;
+  display: flex;
+  align-items: end;
+  padding: 87px 24px;
+  position: relative;
+}
+
+.headliner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, transparent 70%, var(--dark) 100%);
+}
+
+.headliner_content {
+  z-index: 1;
+  width: 295px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.logo_one {
+  width: auto;
+}
