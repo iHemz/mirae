@@ -75,7 +75,8 @@ li {
   position: relative;
 }
 
-li span {
+li span,
+button span {
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -92,15 +93,39 @@ li span {
   height: 100%;
 }
 
+.quick-menu,
+.quick-menu button {
+  display: flex;
+  flex-direction: column;
+}
+
 .quick-menu {
   position: fixed;
   top: 50%;
   translate: 0 -50%;
   right: 8px;
   z-index: 100;
-  display: flex;
-  flex-direction: column;
   gap: 8px;
+}
+
+.quick-menu button {
+  align-items: center;
+  justify-content: space-between;
+  width: 58px;
+  height: 56px;
+  padding: 8px 7px;
+  color: var(--primary-6);
+  border: var(--thin-primary-border);
+  border-radius: var(--borderRadius-4);
+  transition: var(--transition-300);
+}
+
+.quick-menu button:hover {
+  background: var(--opacity-white-6);
+}
+
+.quick-menu button [class^="fa"] {
+  font-size: 20px;
 }
 
 /* Footer styles */
