@@ -1,12 +1,12 @@
-export class Carousel {
-  private carousel: HTMLElement;
-  private slides: HTMLElement[];
-  private dots: HTMLElement[];
-  private currentSlide: number;
-  private slideInterval: number | null;
-  private intervalDuration: number;
+import { Slider } from "./slider.js";
+
+export class Carousel extends Slider {
+  carousel: HTMLElement;
+  slides: HTMLElement[];
+  dots: HTMLElement[];
 
   constructor(element: HTMLElement) {
+    super([], 0, null, null, 10000);
     this.carousel = element;
     this.slides = Array.from(
       this.carousel.querySelectorAll(".carousel_card")
@@ -14,9 +14,6 @@ export class Carousel {
     this.dots = Array.from(
       this.carousel.querySelectorAll(".carousel_dash")
     ) as HTMLElement[];
-    this.currentSlide = 0;
-    this.slideInterval = null;
-    this.intervalDuration = 5000; // 5 seconds per slide
 
     this.init();
   }
@@ -52,31 +49,5 @@ export class Carousel {
     // Add active class to new slide and dot
     this.slides[this.currentSlide].classList.add("active");
     this.dots[this.currentSlide].classList.add("active");
-  }
-
-  nextSlide(): void {
-    const nextIndex = (this.currentSlide + 1) % this.slides.length;
-    this.showSlide(nextIndex);
-  }
-
-  startInterval(): void {
-    if (!this.slideInterval) {
-      this.slideInterval = window.setInterval(
-        () => this.nextSlide(),
-        this.intervalDuration
-      );
-    }
-  }
-
-  stopInterval(): void {
-    if (this.slideInterval) {
-      window.clearInterval(this.slideInterval);
-      this.slideInterval = null;
-    }
-  }
-
-  resetInterval(): void {
-    this.stopInterval();
-    this.startInterval();
   }
 }
