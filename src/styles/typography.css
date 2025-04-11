@@ -3,6 +3,7 @@
 .regular_lg,
 .bold_sm,
 .bold_lg,
+.bold_md,
 h6 {
   letter-spacing: -0.01em;
 }
@@ -15,6 +16,7 @@ h5 {
 
 .bold_sm,
 .bold_lg,
+.bold_md,
 h1,
 .headliner_content__title,
 h5,
@@ -44,6 +46,11 @@ h6 {
 
 .bold_lg {
   font-size: 18px;
+  line-height: 28px;
+}
+
+.bold_md {
+  font-size: 16px;
   line-height: 28px;
 }
 
