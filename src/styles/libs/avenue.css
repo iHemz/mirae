@@ -57,8 +57,9 @@
   gap: 8px;
   opacity: 0;
   transition: all 1000ms linear;
-  translate: 200% 0;
-  will-change: translate, opacity, height, width, top, left, right;
+  translate: 200% 0 800px;
+  backface-visibility: hidden;
+  will-change: translate, opacity, height, width, top, left, right, z-index;
 }
 
 .avenue_carousel__image.next,
@@ -71,13 +72,15 @@
 
 .avenue_carousel__image.previous {
   left: -50%;
-  translate: 40% -50%;
+  translate: 40% -50% 10px;
+  z-index: 1;
 }
 
 .avenue_carousel__image.active {
   opacity: 1;
   right: 50%;
-  translate: 50% 0;
+  translate: 50% 0 0;
+  z-index: 10;
 }
 .avenue_carousel__image.active img {
   height: 293px;
@@ -85,7 +88,8 @@
 
 .avenue_carousel__image.next {
   right: -50%;
-  translate: -40% -50%;
+  translate: -40% -50% 5px;
+  z-index: 3;
 }
 
 .avenue_carousel__image img {
