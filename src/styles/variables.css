@@ -10,6 +10,7 @@
 
   /* primary */
   --primary-6: #00427a;
+  --primary-1: #acc4d8;
 
   /* orange */
   --orange-6: #f58220;
@@ -50,7 +51,10 @@
 
   /* primary */
   --opacity-primary-2: rgba(0, 66, 122, 0.2);
+  --opacity-primaryLight-4: rgba(172, 196, 216, 0.4);
+  --opacity-primaryLight-5: rgba(172, 196, 216, 0.5);
 
   /* Transitions */
   --transition-300: all 300ms;
+  --transition-translate: translate 700ms ease-in-out;
 }

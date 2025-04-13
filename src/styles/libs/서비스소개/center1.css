@@ -1,0 +1,51 @@
+.center-one,
+.center-one_header,
+.center-one_cards,
+.center-one_cards article {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-one {
+  gap: 60px;
+  padding: 60px 0 120px;
+  color: var(--primary-6);
+  position: relative;
+  overflow: hidden;
+}
+
+.center-one_header {
+  padding: 0 8px;
+  gap: 8px;
+  text-align: center;
+}
+
+.center-one_header p {
+  color: var(--grey-5);
+}
+
+.center-one_cards {
+  gap: 32px;
+  padding: 0 8px;
+}
+
+.center-one_cards article {
+  text-align: center;
+  gap: 8px;
+}
+
+.center-one_cards article h6 {
+  color: var(--orange-6);
+}
+
+.center-one__watermark {
+  position: absolute;
+  font-size: 86px;
+  line-height: 80px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  bottom: 0;
+  color: var(--opacity-primaryLight-5);
+  left: 50%;
+  translate: -50% 0;
+}

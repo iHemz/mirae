@@ -1,0 +1,27 @@
+.core_value,
+.core_value__cards,
+.core_value__cards article,
+.core_value__cards___content {
+  display: flex;
+  flex-direction: column;
+}
+
+.core_value {
+  gap: 8px;
+  background: var(--default);
+  padding: 60px 16px;
+  color: var(--grey-6);
+}
+
+.core_value__cards,
+.core_value__cards article {
+  gap: 20px;
+}
+
+.core_value__cards___content {
+  gap: 10px;
+}
+
+.core_value__cards___content p:last-child {
+  color: var(--grey-5);
+}

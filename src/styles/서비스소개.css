@@ -1,0 +1,182 @@
+@import "variables.css";
+@import "typography.css";
+@import "header.css";
+@import "./libs/서비스소개/headliner.css";
+@import "./libs/서비스소개/center1.css";
+@import "./libs/서비스소개/awards.css";
+@import "./libs/서비스소개/core_value.css";
+
+/* Reset and base styles */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 162px;
+}
+
+.add_padding {
+  padding: 80px 16px;
+}
+
+.add_dark_background {
+  background: var(--dark);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--spoka-neo), sans-serif;
+  color: var(--default);
+  max-width: var(--maxW);
+  min-height: var(--minH);
+  background: var(--default);
+  overflow-x: hidden;
+}
+
+main {
+  margin-top: -66.5px;
+  position: relative;
+}
+
+article {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+li {
+  display: list-item;
+  position: relative;
+}
+
+li span,
+button span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mirae_company {
+  height: 100vh;
+}
+
+.mirae_company img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.quick-menu,
+.quick-menu button {
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-menu {
+  position: fixed;
+  top: 50%;
+  translate: 0 -50%;
+  right: 8px;
+  z-index: 100;
+  gap: 8px;
+}
+
+.quick-menu button {
+  align-items: center;
+  justify-content: space-between;
+  width: 58px;
+  height: 56px;
+  padding: 8px 7px;
+  color: var(--primary-6);
+  border: var(--thin-primary-border);
+  border-radius: var(--borderRadius-4);
+  transition: var(--transition-300);
+}
+
+.quick-menu button:hover {
+  background: var(--opacity-white-6);
+}
+
+.quick-menu button [class^="fa"] {
+  font-size: 20px;
+}
+
+/* Footer styles */
+footer,
+.footer_bottom,
+.footer_top__start-right,
+.footer_bottom__start {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  padding: 20px 16px;
+  background: var(--dark);
+  gap: 64px;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_top__start-right {
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.footer_top select {
+  width: 100%;
+  padding: 8px 40px 8px 16px;
+  font-size: 16px;
+  color: var(--default);
+  background-color: var(--dark);
+  border: var(--thin-white-border);
+  border-radius: 50px;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.footer_top .select {
+  position: relative;
+}
+
+.footer_bottom {
+  gap: 20px;
+}
+
+.footer_bottom__start {
+  gap: 8px;
+}
+
+.footer_top .dropdown_icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  translate: 0 -50%;
+  pointer-events: none;
+  z-index: 10;
+  color: var(--default);
+}

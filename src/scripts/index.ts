@@ -1,13 +1,15 @@
 import { AvenueSlider } from "./avenue.js";
 import { Carousel } from "./carousel.js";
 import { EventsSlider } from "./events.js";
+import { Layout } from "./layout.js";
 
-class App {
+export class App extends Layout {
   constructor() {
+    super();
     this.init();
   }
 
-  private init(): void {
+  protected init(): void {
     console.log("Application initialized");
     this.setupEventListeners();
   }
@@ -15,15 +17,11 @@ class App {
   private setupEventListeners(): void {
     document.addEventListener("DOMContentLoaded", async () => {
       try {
-        console.log("DOM Content Loaded");
-
         // Load header
         await this.loadHeader();
-        console.log("Header loaded");
 
         // Load footer
         await this.loadFooter();
-        console.log("Footer loaded");
 
         // Initialize features
         this.initializeFeatures();
@@ -43,6 +41,9 @@ class App {
     // Initialize avenue slider
     this.startAvenueSlider();
 
+    // Initialize nav dropdown
+    this.addDropdownActions();
+
     // Initialize scroll to top
     this.scrollTopAction();
   }
@@ -54,39 +55,6 @@ class App {
     if (avenueElement) {
       new AvenueSlider(avenueElement);
       console.log("Avenue slider started");
-    }
-  }
-
-  private async loadHeader() {
-    const headerResponse = await fetch("../libs/header.html");
-    const headerHtml = await headerResponse.text();
-    const headerDiv = document.createElement("div");
-    headerDiv.innerHTML = headerHtml;
-    document.body.insertBefore(
-      headerDiv.firstElementChild!,
-      document.body.firstChild
-    );
-  }
-
-  private async loadFooter() {
-    const footerResponse = await fetch("../libs/footer.html");
-    const footerHtml = await footerResponse.text();
-    const footerDiv = document.createElement("div");
-    footerDiv.innerHTML = footerHtml;
-    document.body.appendChild(footerDiv.firstElementChild!);
-  }
-
-  private scrollTopAction(): void {
-    const scrollTopButton = document.getElementById("scroll_top");
-    if (scrollTopButton) {
-      scrollTopButton.addEventListener("click", () => {
-        if (window.scrollY > window.innerHeight) {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        }
-      });
     }
   }
 

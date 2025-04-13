@@ -2,8 +2,8 @@
   "name": "mirae",
   "packageManager": "yarn@4.8.1",
   "scripts": {
-    "dev": "lite-server -c bs-config.json",
-    "build": "tsc && cp -r src/index.html src/libs src/assets src/styles dist/ && mkdir -p dist/scripts",
+    "dev": "lite-server -c bs-config.js",
+    "build": "tsc && cp -r src/*.html src/libs src/assets src/styles dist/ && mkdir -p dist/scripts",
     "vercel-build": "yarn build",
     "watch": "tsc -w"
   },

@@ -1,5 +1,6 @@
 @import "variables.css";
 @import "typography.css";
+@import "header.css";
 @import "./libs/headliner.css";
 @import "./libs/convenience.css";
 @import "./libs/carousel.css";
@@ -28,28 +29,22 @@
   background: var(--dark);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--spoka-neo), sans-serif;
   color: var(--default);
   max-width: var(--maxW);
   min-height: var(--minH);
   background: var(--white-1);
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 22px 14px;
-  background: transparent;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  backdrop-filter: blur(8px);
+  position: relative;
+  overflow-x: hidden;
 }
 
 main {
   margin-top: -66.5px;
-  position: relative;
 }
 
 article {
