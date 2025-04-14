@@ -7,6 +7,7 @@
   background-position-x: 70%;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 87px 24px;
   position: relative;
 }
@@ -27,9 +28,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 4px;
 }
 
 .logo_one {
   width: auto;
+}
+
+@media screen and (min-width: 995px) {
+  .headliner_content {
+    width: 100%;
+  }
+
+  .headliner_content h5 {
+    font-size: 56px;
+    line-height: 80px;
+  }
+
+  .headliner_content > div {
+    display: flex;
+    gap: 4px;
+  }
+
+  .headliner_content p {
+    font-size: 56px;
+    line-height: 90px;
+  }
+
+  .headliner .slide_dash {
+    background: var(--opacity-white-4);
+  }
+
+  .headliner .slide_dash[class*="active"] {
+    background: var(--default);
+  }
 }

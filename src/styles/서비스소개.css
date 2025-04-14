@@ -1,6 +1,7 @@
 @import "variables.css";
 @import "typography.css";
 @import "header.css";
+@import "footer.css";
 @import "./libs/서비스소개/headliner.css";
 @import "./libs/서비스소개/center1.css";
 @import "./libs/서비스소개/awards.css";
@@ -37,7 +38,6 @@ body {
   max-width: var(--maxW);
   min-height: var(--minH);
   background: var(--default);
-  overflow-x: hidden;
 }
 
 main {
@@ -121,62 +121,42 @@ button span {
   font-size: 20px;
 }
 
-/* Footer styles */
-footer,
-.footer_bottom,
-.footer_top__start-right,
-.footer_bottom__start {
-  display: flex;
-  flex-direction: column;
+.section_slider {
+  display: none;
 }
 
-footer {
-  padding: 20px 16px;
-  background: var(--dark);
-  gap: 64px;
-}
+@media screen and (min-width: 1024px) {
+  .section_slider {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    translate: -50% 0;
+    z-index: 5;
+  }
 
-.footer_top {
-  display: flex;
-  justify-content: space-between;
-}
+  .section_slider p {
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.014em;
+    font-weight: 700;
+    position: absolute;
+    bottom: 4px;
+    left: -25%;
+    white-space: nowrap;
+  }
 
-.footer_top__start-right {
-  gap: 8px;
-  align-items: flex-end;
-}
+  .section_slider .slide_dash {
+    width: 32px;
+    height: 3px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
 
-.footer_top select {
-  width: 100%;
-  padding: 8px 40px 8px 16px;
-  font-size: 16px;
-  color: var(--default);
-  background-color: var(--dark);
-  border: var(--thin-white-border);
-  border-radius: 50px;
-  appearance: none;
-  cursor: pointer;
-  outline: none;
-}
-
-.footer_top .select {
-  position: relative;
-}
-
-.footer_bottom {
-  gap: 20px;
-}
-
-.footer_bottom__start {
-  gap: 8px;
-}
-
-.footer_top .dropdown_icon {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  translate: 0 -50%;
-  pointer-events: none;
-  z-index: 10;
-  color: var(--default);
+  main {
+    margin-top: -80px;
+  }
 }

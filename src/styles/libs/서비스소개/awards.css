@@ -50,3 +50,52 @@
 .awards_location {
   gap: 20px;
 }
+
+@media screen and (min-width: 1024px) {
+  .awards_certificate {
+    display: none;
+  }
+
+  .awards {
+    padding: 160px 10% 120px;
+    gap: 64px;
+  }
+
+  .awards_header > h6 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .awards_header > div h6 {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .awards_header p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .awards_location {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .awards_location p {
+    font-size: 28px;
+    line-height: 45px;
+  }
+
+  .awards .section_slider p {
+    left: 10%;
+    color: var(--default);
+  }
+  .awards .slide_dash {
+    background: var(--opacity-white-4);
+  }
+
+  .awards .slide_dash[class*="active"] {
+    background: var(--default);
+  }
+}
