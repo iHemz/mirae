@@ -43,4 +43,58 @@
 
 .centers_cards img {
   height: 203px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 640px) {
+  .centers_cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .centers_cards article {
+    flex-basis: calc(50% - 40px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .centers.add_padding {
+    padding: 180px 10% 240px;
+    gap: 160px;
+  }
+
+  .centers_header h6 {
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.014em;
+    gap: 8px;
+  }
+
+  .centers_header img {
+    width: 200px;
+    height: 43.41px;
+  }
+
+  .centers_header > div {
+    font-size: 40px;
+    line-height: 64px;
+  }
+
+  .centers_header > div p:last-child {
+    font-weight: 700;
+    letter-spacing: -0.014em;
+  }
+
+  .centers_cards {
+    flex-wrap: nowrap;
+  }
+
+  .centers_cards img {
+    height: 300px;
+  }
+
+  .centers_cards article p {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }

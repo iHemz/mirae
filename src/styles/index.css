@@ -59,6 +59,7 @@ img {
 
 button {
   cursor: pointer;
+  font-family: var(--spoka-neo);
 }
 
 ul {
@@ -81,6 +82,7 @@ button span {
 
 .mirae_company {
   height: 100vh;
+  max-height: 1027px;
 }
 
 .mirae_company img {
@@ -122,4 +124,10 @@ button span {
 
 .quick-menu button [class^="fa"] {
   font-size: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    margin-top: -80px;
+  }
 }

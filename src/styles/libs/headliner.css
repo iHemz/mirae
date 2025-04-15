@@ -32,3 +32,54 @@
 .logo_one {
   width: auto;
 }
+
+@media screen and (min-width: 1024px) {
+  .headliner {
+    padding: 200px 10.94%;
+  }
+
+  .headliner_content {
+    width: 100%;
+  }
+
+  .headliner_content h1 {
+    font-size: 140px;
+    line-height: 105%;
+  }
+
+  .headliner_content h1 span:last-child {
+    display: inline-block;
+    position: relative;
+  }
+
+  .headliner .logo_one {
+    width: 63.12px;
+    height: 106px;
+  }
+
+  .headliner .superscripted {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    left: -15px;
+    font-size: 39px;
+  }
+
+  .headliner_content > div p:first-child {
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+  }
+
+  .headliner_content > div {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .headliner_content > div p:last-child {
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+  }
+}

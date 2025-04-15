@@ -44,4 +44,58 @@
 
 .convenience_cards img {
   height: 203px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 640px) {
+  .convenience_cards {
+    flex-direction: row;
+  }
+
+  .convenience_cards article {
+    flex-basis: calc(50% - 40px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .convenience.add_padding {
+    padding: 160px 10%;
+  }
+
+  .convenience_header *,
+  .convenience_cards article h5 {
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.014em;
+  }
+
+  .convenience_header div * {
+    letter-spacing: -0.01em;
+  }
+
+  .convenience_cards {
+    height: 620px;
+    gap: 20px;
+  }
+
+  .convenience_cards article:first-child {
+    align-self: flex-end;
+  }
+
+  .convenience_cards article:last-child {
+    align-self: flex-start;
+  }
+
+  .convenience_cards article:nth-child(2) {
+    align-self: center;
+  }
+
+  .convenience_cards img {
+    height: 300px;
+  }
+
+  .convenience_cards p {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }

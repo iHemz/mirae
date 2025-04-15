@@ -65,7 +65,7 @@ header nav.inactive {
   color: var(--default);
   width: 100%;
   padding: 4px;
-  transition: var(--transition);
+  transition: var(--transition-300);
 }
 
 .nav_items a:hover {

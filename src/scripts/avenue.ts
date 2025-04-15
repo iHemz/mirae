@@ -2,8 +2,7 @@ import { Slider } from "./slider.js";
 
 export class AvenueSlider extends Slider {
   private wrapper: HTMLElement;
-  private prevIndex: number;
-  private nextIndex: number;
+  private gapValues: Record<string, number>;
 
   constructor(element: HTMLElement) {
     super([], 0, null, null, 10000);
@@ -11,39 +10,92 @@ export class AvenueSlider extends Slider {
     this.slides = Array.from(
       this.wrapper.querySelectorAll(".avenue_carousel__image")
     ) as HTMLElement[];
-    this.prevIndex =
-      (this.currentSlide - 1 + this.slides.length) % this.slides.length;
-    this.nextIndex = (this.currentSlide + 1) % this.slides.length;
+    this.gapValues = {
+      default: -40,
+      520: -20,
+      768: 20,
+      1024: 240,
+    };
 
     this.init();
   }
 
   init(): void {
     // load slide
-    this.showSlide(0);
+    this.showSlide(4);
 
     // Start automatic sliding
     this.startInterval();
-
-    // Pause on hover
-    this.wrapper.addEventListener("mouseenter", () => this.stopInterval());
-    this.wrapper.addEventListener("mouseleave", () => this.startInterval());
   }
 
-  showSlide(index: number): void {
-    // remove added classes
-    this.slides.forEach((slide) => {
-      slide.classList.remove("previous", "active", "next");
+  private getGapValue() {
+    const screenWidth = window.innerWidth;
+    const gapValues = this.gapValues;
+
+    for (const [breakpoint, gap] of Object.entries(gapValues).reverse()) {
+      if (screenWidth >= Number(breakpoint)) {
+        return gap;
+      }
+    }
+    return gapValues.default;
+  }
+
+  private setPosition(
+    index: number,
+    currentIndex: number,
+    totalSlides: number
+  ) {
+    // Calculate the position relative to the current slide
+    let position = index - currentIndex;
+
+    // Adjust position to show slides on both sides
+    if (position > totalSlides / 2) {
+      position -= totalSlides;
+    } else if (position < -totalSlides / 2) {
+      position += totalSlides;
+    }
+
+    return position;
+  }
+
+  private setOffset(
+    pos: number,
+    baseWidth: number,
+    gap: number,
+    scale: number
+  ) {
+    // Calculate the offset considering the larger size of the active slide
+    let offset = 0;
+    if (pos > 0) {
+      // Slides to the right: add extra gap to account for the larger active slide
+      offset =
+        (baseWidth * scale + gap) * (pos - 1) +
+        (baseWidth * (1 - scale)) / 2 +
+        baseWidth * scale +
+        gap;
+    } else if (pos < 0) {
+      // Slides to the left: mirror the right side calculation
+      offset = (baseWidth * scale + gap) * pos - (baseWidth * (1 - scale)) / 2;
+    }
+    return offset;
+  }
+
+  showSlide(currentIndex: number) {
+    const totalSlides = this.slides.length;
+    const scale = 0.65; // Scale for non-active slides
+    const baseWidth = 300; // Base width of each slide in pixels
+    const gap = this.getGapValue();
+
+    this.slides.forEach((slide, index) => {
+      const position = this.setPosition(index, currentIndex, totalSlides);
+      const isActive = index === currentIndex;
+      const currentScale = isActive ? 1 : scale;
+      const offset = this.setOffset(position, baseWidth, gap, scale);
+
+      slide.style.transform = `translateX(${offset}px) translateX(-50%) scale(${currentScale})`;
+      slide.style.zIndex = isActive ? "1" : "0";
+      slide.style.opacity = isActive ? "1" : "0.5";
     });
-
-    // set new indexes
-    this.prevIndex = (index - 1 + this.slides.length) % this.slides.length;
-    this.currentSlide = index;
-    this.nextIndex = (index + 1) % this.slides.length;
-
-    // add classes to new indexed elements
-    this.slides[this.currentSlide].classList.add("active");
-    this.slides[this.nextIndex].classList.add("next");
-    this.slides[this.prevIndex].classList.add("previous");
+    this.currentSlide = currentIndex;
   }
 }

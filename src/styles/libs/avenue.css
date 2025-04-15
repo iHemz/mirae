@@ -38,61 +38,144 @@
   right: 0;
 }
 
+.decorator_3,
+.decorator_4 {
+  display: none;
+}
+
 .avenue_carousel {
   position: relative;
   height: 334px;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   justify-content: center;
-  perspective: 1000px;
-  transform-style: preserve-3d;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .avenue_carousel__image {
   position: absolute;
-  top: 0;
   width: 240px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  opacity: 0;
-  transition: all 1000ms linear;
-  translate: 200% 0 800px;
-  backface-visibility: hidden;
-  will-change: translate, opacity, height, width, top, left, right, z-index;
-}
-
-.avenue_carousel__image.next,
-.avenue_carousel__image.previous {
-  opacity: 0.5;
-  height: 237px;
-  width: 160px;
-  top: 50%;
-}
-
-.avenue_carousel__image.previous {
-  left: -50%;
-  translate: 40% -50% 10px;
-  z-index: 1;
-}
-
-.avenue_carousel__image.active {
   opacity: 1;
-  right: 50%;
-  translate: 50% 0 0;
-  z-index: 10;
-}
-.avenue_carousel__image.active img {
-  height: 293px;
-}
-
-.avenue_carousel__image.next {
-  right: -50%;
-  translate: -40% -50% 5px;
-  z-index: 3;
+  transition: var(--transition-300);
+  left: 50%;
 }
 
 .avenue_carousel__image img {
   width: 100%;
+  height: 298px;
   object-fit: contain;
+  border-radius: 4px;
+}
+
+.avenue_carousel__image p {
+  text-align: center;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .avenue_carousel {
+    height: 400px;
+    padding: 0 40px;
+  }
+
+  .avenue_carousel__image {
+    width: 280px;
+  }
+
+  .avenue_carousel__image.active {
+    width: 320px;
+  }
+
+  .avenue_carousel__image img {
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .avenue_list {
+    padding: 160px 0;
+    gap: 80px;
+  }
+
+  .avenue_carousel {
+    height: 769px;
+    padding: 0 80px;
+  }
+
+  .avenue_carousel__image {
+    width: 542px;
+  }
+
+  .avenue_carousel__image.active {
+    width: 400px;
+  }
+
+  .avenue_carousel__image img {
+    height: 709px;
+  }
+
+  .avenue_carousel__image p {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+
+  .avenue_header > div > img {
+    width: 202px;
+    height: 44px;
+  }
+
+  .avenue_header > div :where(p, h5) {
+    font-size: 40px;
+    line-height: 64px;
+  }
+
+  .avenue_header .avenue_title__decorator {
+    width: 25%;
+    object-fit: cover;
+    height: 47.6px;
+  }
+
+  .decorator_1,
+  .decorator_2 {
+    display: none;
+  }
+
+  .decorator_3 {
+    display: block;
+    left: 3.67%;
+  }
+
+  .decorator_4 {
+    display: block;
+    right: 3.67%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .avenue_header .avenue_title__decorator {
+    width: 28%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .avenue_header .avenue_title__decorator {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .avenue_header .avenue_title__decorator {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .avenue_header .avenue_title__decorator {
+    width: 33.3%;
+  }
 }

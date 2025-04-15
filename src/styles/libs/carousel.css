@@ -119,3 +119,42 @@
 .carousel_card__4 {
   background-image: url("https://s3-alpha-sig.figma.com/img/00e3/22c3/7e095adc4b70dacedcdc217d89b732f3?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=oYnrkMFO4alqUvGBJEHB4GF3Cw-tetXjiFkOLd1pGLuFgfpN~~2xZOQYKZbR9TO8KtPQx7Xz39v1o0pScBLKnsFt7zd7iaOyxlec37lxdPmVbow7wVs-jLDRL7a3DjI1bpmZu6TMYawCYU8EQb6gpHFTJzkYGNSpMEEpOpogdjXZnBTqE1ZZxj1R6774PXvl7pe4t9Muv00d2pSgYYmhMlRwIuq6MOnviN8y6V36HerFJZacsqWom8ZEYOGR6mqJt6m9ScM1N52mir63jgORiXRuvetpI1SWkSG79H3PcmfK6vsoYTcZlnfTtcVQZm8NSX~nAUvEVJ2T6JogQYSPZQ__");
 }
+
+@media screen and (min-width: 1024px) {
+  .carousel_card {
+    padding: 280px 10% 160px;
+  }
+
+  .carousel_card h5 {
+    font-size: 80px;
+    line-height: 100%;
+    max-width: 954px;
+  }
+
+  .carousel_logo {
+    width: 48.07px;
+    height: 83.03px;
+  }
+
+  .carousel_logo_superscripted {
+    font-size: 28px;
+    line-height: 33.16px;
+  }
+
+  .carousel_card > div {
+    padding-top: 16px;
+    gap: 40px;
+    max-width: 1043px;
+  }
+
+  .carousel_card > div p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .carousel_card button {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px 12px;
+  }
+}
