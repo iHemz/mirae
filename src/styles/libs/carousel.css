@@ -105,19 +105,19 @@
 }
 
 .carousel_card__1 {
-  background-image: url("https://s3-alpha-sig.figma.com/img/d22e/15a2/4dc58089764b0b9240a66b8fd6e3fd85?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZFcfCh~Dn-QspeNGrM6IwXDyroizuJ-LyhHuVaGwtSj1rGMj3LnIxzq6oTTrfpZuH5xvFQlKpQlpLnOMUcw4VzlpcfHWPX46OSTVNjTqUMdf3pe5gEGu-YtyvWiiGl~INW9g-5CgUPajfxqGLleZ-ggfugporIVJRS0ZZUsvgLWaKC0i7lOOdoskdrDQLXWHn3mWI3C-BlC31kAde4pbzAjUZEXJoxmiNZPixGxXjfrgfA3RWprQcR~M-p-HggOHxjtupzdmESaamjEihN~7McohjjQLykwtlrqHxipVzFn8hwYCc5APNzrBFlo0WCOLBYjNTCZAVsME5Z5Du3zYsg__");
+  background-image: url("../../assets/carousel_1.jpg");
 }
 
 .carousel_card__2 {
-  background-image: url("https://s3-alpha-sig.figma.com/img/88c0/93ef/4f5f10b82ad3f169edaddec23f228b47?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=e0iS23ZrZ3C8B8T0llQSDzfvgpJ4t7ZO38bs0DJN61abd2ViUEPAD0OD~K6rsGy9oV81Fkly44eZbr-qitttrVyXs~K64g~YiokhUU0nMoxTRxt9CesFzdi~lK3~bcj-T63JIqOirfMvEg4Xkuop3pkWh-ewHpIBvnOBSnI20NCR~bay5EXQ43pgJNNBPC9upbTV30NOsiDTD1DMf8-pOEsHg0UPb5ZDSzSEA5SZB9go15TYpEeHseQexWups2mH8THcsT4bizgCKewRji267OjxAVb2DvnyFwK57zDMB2Hd5SimG4fBxFB8r96AjvuTUzUGt7Oc1ovwUduJBCrHsA__");
+  background-image: url("../../assets/carousel_2.jpg");
 }
 
 .carousel_card__3 {
-  background-image: url("https://s3-alpha-sig.figma.com/img/94d5/ccb8/859e358bede22330ea654cb311f6a0fb?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Go8UKnse18Q-k~x3toAdcWoaU-jaMGDaHByGz4MlqcSDtk8FghKEedLZ4uH-QsyKj2PLyonty5tUE4DLqBmNqLXlNLqclPUvq6yEsnx24221xEgfl~Fden1KHWLzZP4ufu1Ztj7E5MB4FsfEA3EuRlIiowU8XNYIlECJnSQYO0nB~ZJghE3uflpQsXIW8jQQGFL3YNVtZwfHSRKxa4x-8pJqc86kP-bibeBN5yTj1dr2a7oqkREwneuGO-lm~hFWUxJTBZ6RXIN4~TO~WSqKzYe5l9qmFa4q8jrXZ455q0RvV8FXnNp-gdapbrdo2kSzXg1ZEHv9azubicYyx~OXYQ__");
+  background-image: url("../../assets/carousel_3.jpg");
 }
 
 .carousel_card__4 {
-  background-image: url("https://s3-alpha-sig.figma.com/img/00e3/22c3/7e095adc4b70dacedcdc217d89b732f3?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=oYnrkMFO4alqUvGBJEHB4GF3Cw-tetXjiFkOLd1pGLuFgfpN~~2xZOQYKZbR9TO8KtPQx7Xz39v1o0pScBLKnsFt7zd7iaOyxlec37lxdPmVbow7wVs-jLDRL7a3DjI1bpmZu6TMYawCYU8EQb6gpHFTJzkYGNSpMEEpOpogdjXZnBTqE1ZZxj1R6774PXvl7pe4t9Muv00d2pSgYYmhMlRwIuq6MOnviN8y6V36HerFJZacsqWom8ZEYOGR6mqJt6m9ScM1N52mir63jgORiXRuvetpI1SWkSG79H3PcmfK6vsoYTcZlnfTtcVQZm8NSX~nAUvEVJ2T6JogQYSPZQ__");
+  background-image: url("../../assets/carousel_4.jpg");
 }
 
 @media screen and (min-width: 1024px) {

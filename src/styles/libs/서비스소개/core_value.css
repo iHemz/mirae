@@ -18,12 +18,25 @@
   gap: 20px;
 }
 
+.core_value__cards img {
+  max-height: 200px;
+  object-position: bottom;
+  object-fit: cover;
+}
+
 .core_value__cards___content {
   gap: 10px;
 }
 
 .core_value__cards___content p:last-child {
   color: var(--grey-5);
+}
+
+@media screen and (min-width: 640px) {
+  .core_value__cards img {
+    max-height: 400px;
+    height: 400px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -48,8 +61,7 @@
 
   .core_value__cards img {
     max-height: 724px;
-    width: 100%;
-    object-fit: cover;
+    height: 724px;
   }
 
   .core_value__cards article:nth-child(even) {
