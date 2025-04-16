@@ -38,11 +38,12 @@ body {
   max-width: var(--maxW);
   min-height: var(--minH);
   background: var(--default);
+  position: relative;
+  overflow-x: hidden;
 }
 
 main {
   margin-top: -66.5px;
-  position: relative;
 }
 
 article {
