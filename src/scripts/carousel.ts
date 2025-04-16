@@ -32,10 +32,6 @@ export class Carousel extends Slider {
 
     // Start automatic sliding
     this.startInterval();
-
-    // Pause on hover
-    this.carousel.addEventListener("mouseenter", () => this.stopInterval());
-    this.carousel.addEventListener("mouseleave", () => this.startInterval());
   }
 
   showSlide(index: number): void {
