@@ -20,25 +20,25 @@ A modern web project template using HTML, CSS, and TypeScript.
 1. Install dependencies:
 
 ```bash
-npm install
+yarn install
 ```
 
 2. Start the development server:
 
 ```bash
-npm start
+yarn dev
 ```
 
 3. Build the project:
 
 ```bash
-npm run build
+yarn build
 ```
 
 4. Watch for changes during development:
 
 ```bash
-npm run watch
+yarn watch
 ```
 
 ## Features
