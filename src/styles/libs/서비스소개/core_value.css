@@ -11,6 +11,7 @@
   background: var(--default);
   padding: 60px 16px;
   color: var(--grey-6);
+  position: relative;
 }
 
 .core_value__cards,

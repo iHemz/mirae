@@ -39,7 +39,7 @@ body {
   min-height: var(--minH);
   background: var(--default);
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 main {
