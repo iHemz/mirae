@@ -1,5 +1,7 @@
 # HTML/CSS/TypeScript Project
 
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/ihemz/mirae)
+
 A modern web project template using HTML, CSS, and TypeScript.
 
 ## Project Structure
